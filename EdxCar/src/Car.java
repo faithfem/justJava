@@ -1,6 +1,7 @@
 public class Car {
 
         //declare variables (INSTANCE VARIABLES)
+        //INSTANCE VARIABLES ARE VARIABLES DECLARED OUTSIDE A METHOD
 
         private int odometer;
         private String owner;
@@ -14,6 +15,7 @@ public class Car {
             this.owner = owner;
             this.distance = distance;
         }
+
 
         //Create a METHOD
 

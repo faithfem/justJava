@@ -23,8 +23,10 @@ public class FibonacciSeries {
             System.out.print("" + ","+n3);
             n1=n2; //tells the code to add the first number to the second. Missing this means loop will add only 1
             n2=n3;//tells code to add 2nd and 3rd numbers. If not, code stops adding after second element
-        }
 
+        //THIS CODE PRINTS:
+            //12,13,25,38,63,101,164,265,429,694,1123
+        }
 
 
     }

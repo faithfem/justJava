@@ -29,7 +29,7 @@ public class tuna {
     }
     
 //Create the method to be called by the main class    
-    public void saying(){
+    public void simpleMessage(){
         System.out.printf("My daughter's name is %s\n", getName());
     }
     

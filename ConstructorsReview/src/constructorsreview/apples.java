@@ -1,7 +1,7 @@
 
 package constructorsreview;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class apples {
     
@@ -16,14 +16,18 @@ public class apples {
         //iii) COMMENT OUT all other lines. With a contructor, u need less code in main
         
         tuna thamaki = new tuna("Shiku"); // -> This is an object. "tuna" is coming from constructor
-        tuna thamaki2 = new tuna("Wairimu"); // -> This is a second object
+        thamaki.simpleMessage(); // -> The objectis picking up the method
         
+        
+        
+        tuna thamaki2 = new tuna("Wairimu"); // -> This is a second object
+        thamaki2.simpleMessage(); // -> The second object is picking up the same method
         
         /*System.out.println("Enter name here: ");
         String hisHerName = input.nextLine();
         thamaki.setName(hisHerName);*/
-        thamaki.saying(); // -> The objectis picking up the method
-        thamaki2.saying(); // -> The second object is picking up the same method
+
+        
         
         
     }

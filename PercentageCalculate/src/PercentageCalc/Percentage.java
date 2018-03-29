@@ -32,8 +32,8 @@ public class Percentage extends javax.swing.JFrame {
         txtLab2 = new javax.swing.JLabel();
         txtField1 = new javax.swing.JTextField();
         Calculate = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        Clear = new javax.swing.JButton();
+        Exit = new javax.swing.JButton();
         txtField2 = new javax.swing.JTextField();
         txtField3 = new javax.swing.JTextField();
 
@@ -45,11 +45,9 @@ public class Percentage extends javax.swing.JFrame {
 
         Calculate.setText("Calculate");
 
-        jButton2.setText("jButton2");
+        Clear.setText("Clear");
 
-        jButton3.setText("jButton3");
-
-        txtField3.setText("jTextField1");
+        Exit.setText("Exit");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -62,14 +60,14 @@ public class Percentage extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(Calculate, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
                     .addComponent(txtField1)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Clear, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(75, 75, 75)
                 .addComponent(txtLab2, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(41, 41, 41)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(txtField2)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtField3, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE))
+                    .addComponent(Exit, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
+                    .addComponent(txtField3))
                 .addContainerGap(170, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -87,8 +85,8 @@ public class Percentage extends javax.swing.JFrame {
                     .addComponent(Calculate))
                 .addGap(151, 151, 151)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
-                    .addComponent(jButton2))
+                    .addComponent(Exit)
+                    .addComponent(Clear))
                 .addContainerGap(358, Short.MAX_VALUE))
         );
 
@@ -149,8 +147,8 @@ public class Percentage extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Calculate;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton Clear;
+    private javax.swing.JButton Exit;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txtField1;
     private javax.swing.JTextField txtField2;

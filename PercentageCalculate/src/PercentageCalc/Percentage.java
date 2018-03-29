@@ -45,8 +45,18 @@ public class Percentage extends javax.swing.JFrame {
         txtLab2.setText("% of");
 
         Calculate.setText("Calculate");
+        Calculate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CalculateActionPerformed(evt);
+            }
+        });
 
         Clear.setText("Clear");
+        Clear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ClearActionPerformed(evt);
+            }
+        });
 
         Exit.setText("Exit");
         Exit.addActionListener(new java.awt.event.ActionListener() {
@@ -120,6 +130,21 @@ public class Percentage extends javax.swing.JFrame {
     private void ExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitActionPerformed
         System.exit(0);
     }//GEN-LAST:event_ExitActionPerformed
+
+    private void ClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ClearActionPerformed
+        txtField1.setText("");
+        txtField2.setText("");
+        txtField3.setText("");
+    }//GEN-LAST:event_ClearActionPerformed
+
+    private void CalculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalculateActionPerformed
+        
+        float num1, num2, result;
+        num1 = Float.parseFloat(txtField1.getText());
+        num2 = Float.parseFloat(txtField2.getText());
+        result = num2 / 100 * num1;
+        txtField3.setText(String.valueOf(result));
+    }//GEN-LAST:event_CalculateActionPerformed
 
     /**
      * @param args the command line arguments
